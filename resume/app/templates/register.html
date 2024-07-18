@@ -1,8 +1,33 @@
-<form method="post">
-    {%csrf_token%}
-    {{form}}
-    <button type="submit">Register</button>
-    
-    
-
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css":>
+    <style>
+        body {
+            background: linear-gradient(to right, #dcd8e0, #a9c0e4);   
+        }
+        .container {
+            margin: auto;
+            width: 40%;
+            border: 2px solid black;
+            padding: 05px;
+            margin-top: 05%;
+        }
+        .button{
+            border-radius:4px;
+        }   
+    </style>
+</head>
+<body>
+    <div class ="container">
+    <form method="post">
+        {%csrf_token%}
+        {{form}}
+        <br><button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+</body>
+</html>

@@ -27,7 +27,7 @@ def index(request):
             about = about,
             college = college,
             degree = degree,
-            project = project
+            project = project,
 
         )
         pr1.save()
